@@ -133,8 +133,9 @@ li {
 }
 
 #title-icon {
-    width: 3em;
+    width: 4em;
     margin: 10px;
+    background-color: transparent;
 }
 
 /* used to center the title */
