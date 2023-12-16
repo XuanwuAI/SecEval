@@ -1,0 +1,310 @@
+/* some constants used throughout the website*/
+:root {
+    --nav-font: Arial, Helvetica, sans-serif;
+    --nav-height: 6vh;
+    --UCLA-gold: #FFD100;
+    --UCLA-blue: #2774AE;
+    --UCLA-darkblue: #003B5C;
+    --body-font: #212529;
+    --heading: #1859c2;
+    --nav-darkblue: #05004a;
+    --nav-color: #212529;
+    --nav-color-light: #353c42;
+    --nav-darkblue: #05004a;
+}
+
+html {
+    overflow-x: hidden;
+    font-family: var(--nav-font);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 110%;
+    color: var(--body-font)
+}
+
+strong {
+    color: var(--body-font);
+}
+
+/* block: heading in the paragraph */
+h1 {
+    /* color: var(--UCLA-blue); */
+    color: var(--heading);
+}
+
+/* element: paragraphs in the body text */
+p {
+    line-height: 150%;
+    font-size: 18px;
+}
+
+/* links */
+a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+a:focus,
+a:hover {
+    color: #005587;
+    text-decoration: underline;
+}
+
+a.hover {
+    text-decoration: none;
+}
+
+a.hover:hover {
+    text-decoration: underline;
+}
+
+/* block: paper title in the body text */
+papername {
+    font-family: Arial;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* element: divider line */
+hr {
+    width: 75%;
+    color: silver;
+    opacity: 0.5;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    margin: 0;
+}
+
+/* list */
+li {
+    margin-top: 12px;
+    font-size: 18px;
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+/* body of the page */
+#body {
+    width: 60vw;
+    margin: auto;
+}
+
+/* section */
+.section {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 4px;
+}
+
+/* anchor tag for nav button scrolling */
+.anchor {
+    position: relative;
+    display: block;
+    /* visibility: hidden; */
+    top: calc(-1 * var(--nav-height));
+    height: 1px;
+}
+
+/* the banner */
+#title {
+    margin-top: var(--nav-height);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(50vh - var(--nav-height));
+    width: 100vw;
+    left: 0vw;
+    font-weight: bold;
+    color: white;
+    /* background: linear-gradient(to bottom, var(--nav-darkblue), var(--UCLA-blue)); */
+    background: linear-gradient(180deg, var(--nav-darkblue), var(--UCLA-blue));
+    /* background: linear-gradient(, var(--UCLA-darkblue), var(--UCLA-blue) 60%, white); */
+}
+
+#title-icon {
+    width: 3em;
+    margin: 10px;
+}
+
+/* used to center the title */
+#title-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#title-text {
+    font-size: 50px;
+}
+
+#subtitle-text {
+    font-size: 30px;
+    text-align: center;
+    line-height: 125%;
+    margin: -0.5em;
+}
+
+/* change this to adjust the vertical position of the title*/
+#title-padding-bottom {
+    font-size: 1.5em;
+}
+
+/* shows three examples on the home page */
+#example-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* data example images */
+.example-img {
+    /* width: 15vw; */
+    width: 90%;
+    margin: auto;
+}
+
+/* makes its children independent columns on the same row */
+.makecol {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#overview-left {
+    width: 70%;
+}
+
+#overview-right {
+    width: 35%;
+}
+
+/* not very important. Tried to make the website responsive */
+@media only screen and (max-width: 1000px) {
+    #body {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        left: 0;
+    }
+
+    .section {
+        width: 98%;
+        padding: 2.5%;
+    }
+
+    #overview-content-wrapper {
+        flex-direction: column;
+    }
+
+    #overview-left,
+    #overview-right {
+        width: 100%;
+    }
+
+    table {
+        display: none;
+    }
+}
+
+.bibtax {
+    /* font-family: Arial; */
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+}
+
+.ext-link {
+    /* color: var(--UCLA-blue); */
+    color: #007bff;
+    /* text-decoration: underline; */
+}
+
+#cc-img {
+    --width: 40%;
+    width: var(--width);
+    margin: 0 calc(calc(100% - var(--width)) / 2);
+}
+
+/* class: profile */
+.profile {
+    display: inline-block;
+    width: 180px;
+}
+
+/* class: profile image */
+.profile-img {
+    border-radius: 50%;
+    width: 150px;
+}
+
+/* #task-pie-chart */
+.col-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.col {
+    width: 48%;
+}
+
+/* Table for three sub-tasks */
+#tasks {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 70%;
+    text-align: center;
+    margin: auto;
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+/*table tile*/
+#tasks th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 600;
+    background-color: var(--UCLA-darkblue);
+    color: white;
+}
+
+#tasks td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#tasks tr:nth-child(even) {
+    background-color: #f5f5f5;
+}
+
+#tasks tr:hover {
+    background-color: #ddd;
+}

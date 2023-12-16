@@ -1,0 +1,189 @@
+/* next/prev button styling */
+#multiline{
+    line-height: 1em;
+}
+
+input[type=button] {
+    cursor: pointer;
+    background: white;
+    width: 5vw;
+    height: 3vh;
+    border-radius: 5px;
+    font-size: 0.8em;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
+    margin-top: var(--nav-height);
+}
+
+.optionsbtn {
+    height: 50px;
+    padding: 5px 10px;
+    top: var(--nav-height);
+    left: 0;
+    position: fixed;
+    z-index: 1;
+
+    font-size: 20px;
+    cursor: pointer;
+    background-color: var(--nav-color);
+    color: white;
+    border: none;
+}
+
+.optionsbtn:hover {
+    background-color: silver;
+}
+
+
+#option-panel {
+    position: sticky;
+    z-index: 2;
+    height: 250px;
+    top: var(--nav-height);
+    left: 0;
+    background-color: silver;
+    overflow-x: hidden;
+    transition: 0.5s;
+    height: calc(100vh - var(--nav-height) - 40px);
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    align-items: center;
+    max-width: 20vw;
+    padding-top: 40px;
+}
+
+#option-panel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+#option-panel a:hover {
+    color: #f1f1f1;
+}
+
+#option-panel .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 36px;
+}
+
+#display {
+    float: right;
+    width: 60vw;
+    transition: 0.5s;
+    padding: 0px 10vw;
+}
+
+#content-body {
+    /* height: 200vh; */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.display-col {
+    width: 48%;
+}
+
+.box {
+    padding: 10px;
+    margin: 0;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    /* box-shadow: 5px 5px 5px rgba(0,0,0,0.2); */
+    overflow-y: auto;
+    max-height: 100vh;
+}
+
+#title {
+    margin: 50px 0;
+}
+
+.question-title {
+    vertical-align: middle;
+}
+
+.question-txt {
+    overflow-y: hidden;
+    color: blue;
+}
+
+.hint-txt {
+    margin-bottom: 2px;
+}
+
+.question-img {
+    max-width: 100%;
+    max-height: 400px;
+    width: auto;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.choices {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.choices-vertical {
+    display: grid;
+    row-gap: 10px;
+}
+
+.choice-txt {
+    border: 1px solid silver;
+    /* text-align: center; */
+    padding: 5px 10px;
+    margin-right: 10px;
+    width: fit-content;
+}
+
+.answer-txt {
+    color: green;
+    font-weight: bold;
+}
+
+.optbox {
+    width: calc(90%);
+    margin-bottom: 10px;
+    transition: all 0.5s ease;
+}
+
+.opttitle {
+    width: 90%;
+    text-align: left;
+}
+
+.dd-label {
+    margin: 0px 0;
+    display: block;
+}
+
+#filter-submit {
+    color: white;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.button-success {
+    background-color: rgb(28, 184, 65);
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore | SecEval: A Comprehensive Benchmark for Evaluating Cybersecurity Knowledge of Foundation Models</title>
+    <link rel="icon" href="img/logo.png" type="image/icon type">
+
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.1.0/build/pure-min.css"
+        integrity="sha384-yHIFVG6ClnONEA5yB5DJXfW2/KC173DIQrYoZMEtBvGzmf0PKiGyNEqe9N6BNDBH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/explore.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/underscore@latest/underscore-umd-min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+    <script src="javascript/problems.js"></script>
+    <script src="javascript/explore.js" defer></script>
+</head>
+
+<body>
+    <div id="nav">
+        <div id="icon">
+            <img src="img/logo.png" id="nav-icon">
+            <a class="nav-button" href="https://ylxmf2005.github.io/SecEval/"
+                style="margin-left: 2px; font-size: 24px">SecEval
+            </a>
+        </div>
+        <div>
+            <a class="nav-button" href="index.html#home">Home</a>
+            <a class="nav-button" href="index.html#dataset">Dataset</a>
+            <a class="nav-button" href="url">Paper</a>
+            <a class="nav-button" href="index.html#citation">Citation</a>
+            <a class="nav-button" href="index.html#contact">Contact</a>
+            <a class="nav-button" href="leaderboard.html">Leaderboard</a>
+            <a class="nav-button" href="explore.html">Explore</a>
+        </div>
+    </div>
+
+    <button class="optionsbtn">☰</button>
+    <div class="row">
+        <div id="option-panel" class="left">
+            <a href="javascript:void(0)" class="closebtn">×</a>
+            <h3 class="opttitle">Sample Filters</h3>
+            <div class="optbox"></div>
+            <button type="button" class="pure-button pure-button-primary" id="filter-submit">Refresh data</button>
+        </div>
+        <div id="display">
+            <br><br>
+            <h1 id="multiline" xt-marked="ok">SecEval (A Comprehensive Benchmark for Evaluating Cybersecurity Knowledge of Foundation Models)</h1>
+            <br><br>
+            <div id="content-body">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
