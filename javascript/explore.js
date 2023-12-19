@@ -120,6 +120,7 @@ function convert_latex(data) {
 }
 
 function make_qt(text) {
+    text = text.replace(/^\n+|\n+$/g, '');
     let html = `
             <p><b>Question </b></p>
             <p class="question-txt">${convert_latex(text).replace(/\\n|\n/g, "<br>")}</p>
