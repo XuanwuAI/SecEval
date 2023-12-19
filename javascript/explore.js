@@ -1,49 +1,18 @@
 let topics = [
     'All',
-    'Network Security',
+    'SoftwareSecurity',
+    'NetworkSecurity',
     'Vulnerability',
-    'Memory Security',
-    'Web Security',
-    'App Security',
+    'MemorySafety',
+    'WebSecurity',
+    'AppSecurity',
     'Cryptography',
-    'System Security',
-    'Pentest'
+    'SystemSecurity',
+    'PenTest'
 ]
 
-let sources = [
-    'All',
-    'CS161 Textbook at UC Berkeley',
-    'Network Security Tools',
-    'CWE',
-    'Apple Platform Security',
-    'Android Security Document',
-    'OWASP MASTG',
-    'MITRE ATT&CK',
-    'MITRE D3fend'
-];
 
-var sources_by_topic = {
-    "Network Security": ['All', 'CS161 Textbook at UC Berkeley', 'Network Security Tools'],
-    "Vulnerability": ['All', 'CWE'],
-    "Memory Security": ['All', 'CS161 Textbook at UC Berkeley'],
-    "Web Security": ['All', 'CS161 Textbook at UC Berkeley', 'Mozilla Web Security Guidelines', 'OWASP MASTG'],
-    "App Security": ['All', 'Apple Platform Security', 'Android Security Document'],
-    "Cryptography": ['All', 'CS161 Textbook at UC Berkeley'],
-    "System Security": ['All', 'Apple Platform Security', 'Android Security Document'],
-    "Pentest": ['All', 'MITRE ATT&CK', 'MITRE D3fend'],
-    'All' : [
-        'CS161 Textbook at UC Berkeley',
-        'Network Security Tools',
-        'CWE',
-        'Apple Platform Security',
-        'Android Security Document',
-        'OWASP MASTG',
-        'MITRE ATT&CK',
-        'MITRE D3fend'
-    ]
-};
 
-let source_dd = make_dropdown("Choose a source:", sources, "source-dd");
 let topic_dd = make_dropdown("Choose a topic:", topics, "topic-dd");
 let optbtn = document.getElementsByClassName("optionsbtn")[0];
 let closebtn = document.getElementsByClassName("closebtn")[0];
@@ -55,28 +24,9 @@ let opt_dds = document.getElementsByClassName("opt-dd");
 let filter_submit = document.getElementById("filter-submit");
 
 optboxes[0].innerHTML += topic_dd;
-optboxes[0].innerHTML += source_dd;
 
 topic_dd = document.getElementById("topic-dd");
-source_dd = document.getElementById("source-dd");
 
-
-topic_dd.addEventListener("change", function () {
-    let selected_topic = topic_dd.options[topic_dd.selectedIndex].value;
-
-    let related_sources = sources_by_topic[selected_topic];
-
-    while (source_dd.firstChild) {
-        source_dd.removeChild(source_dd.firstChild);
-    }
-
-    for (let i = 0; i < related_sources.length; i++) {
-        let option = document.createElement("option");
-        option.value = related_sources[i];
-        option.text = related_sources[i];
-        source_dd.add(option);
-    }
-});
 
 let filters = {};
 
@@ -109,7 +59,6 @@ function closeNav() {
 
 
 function change_filters(e) {
-    filters.source = document.getElementById("source-dd").value;
     filters.topic = document.getElementById("topic-dd").value;
 }
 
@@ -230,10 +179,8 @@ function filter_data() {
     change_filters();
     res = problem_data;
     if (filters.topic !== "All")
-        res = res.filter(e => e.topic === filters.topic);
-    if (filters.source !== "All")
-        res = res.filter(e => e.source === filters.source);
-    d = _.sample(res, Math.min(6, res.length));
+        res = res.filter(e => e.topics.includes(filters.topic));
+    d = _.sample(res, Math.min(100, res.length));
     create_page(d);
 }
 
