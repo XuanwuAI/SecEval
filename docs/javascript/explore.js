@@ -120,7 +120,6 @@ function convert_latex(data) {
 }
 
 function make_qt(text) {
-    text = text.replace(/^\n+|\n+$/g, '');
     let html = `
             <p><b>Question </b></p>
             <p class="question-txt">${convert_latex(text).replace(/\\n|\n/g, "<br>")}</p>
@@ -128,11 +127,12 @@ function make_qt(text) {
     return html;
 }
 
+
 function make_box(contents, cls = "") {
     if (contents.join("").length === 0) return "";
     let html = `
         <div class="box ${cls}"> 
-            ${contents.join(" ").replace(/\\n|\n/g, "<br>")}
+            ${contents.join(" ").replace(/\\n|\n/g, "")}
         </div>
     `;
     return html;
