@@ -74,6 +74,16 @@ function create_page(d) {
     console.log("reflowed");
 }
 
+function escapeHtml(html) {
+    return html
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;");
+}
+
+
 function create_col(data) {
     res = [];
     for (each of data) {
@@ -84,11 +94,16 @@ function create_col(data) {
 
 
 function create_example(data) {
-    let question = make_qt(data.question);
-    let choices = make_choices(data.choices);
+    let escapedQuestion = escapeHtml(data.question);
+    let question = make_qt(escapedQuestion);
+
+    let escapedChoices = data.choices.map(choice => escapeHtml(choice));
+    let choices = make_choices(escapedChoices);
+
     let answer = make_answer(data.answer);
     html = make_box([question, choices, answer]) + "<hr/>";
     return html;
+
 }
 
 
