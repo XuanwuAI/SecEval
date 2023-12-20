@@ -85,3 +85,7 @@ The dataset is released under the [CC BY-NC-SA 4.0](https://creativecommons.org/
     year={2023}
 }
 ```
+
+## Credits
+
+This work is supported by [Tencent Security Xuanwu Lab](https://xlab.tencent.com/en/) and Tencent Spark Talent Program.
