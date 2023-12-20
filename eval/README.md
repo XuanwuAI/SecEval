@@ -8,7 +8,11 @@ pip install -r requirements.txt
 
 ## Download Dataset
 
+You can download the json file of the dataset by running.
 
+```
+wget https://huggingface.co/datasets/XuanwuAI/SecEval/blob/main/problems.json
+```
 
 ## Evaluate on a Model
 

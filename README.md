@@ -34,7 +34,7 @@ SecEval generates questions by prompting OpenAI GPT4 with authoritative sources 
 
 ## Dataset
 
-You can download the zip file of the dataset by running.
+You can download the json file of the dataset by running.
 
 ```
 wget https://huggingface.co/datasets/XuanwuAI/SecEval/blob/main/problems.json
