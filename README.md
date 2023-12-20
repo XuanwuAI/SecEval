@@ -17,6 +17,7 @@ SecEval generates questions by prompting OpenAI GPT4 with authoritative sources 
 - [Future Work](#future-work)
 - [Licenses](#licenses)
 - [Citation](#citation)
+- [Credits](#credits)
 
 
 

@@ -63,7 +63,6 @@ Azure OpenAI Model Backend is used for evaluating on models that are deployed on
 ```bash
 export OPENAI_API_KEY=<your openai api key>
 export OPENAI_API_ENDPOINT=<your openai api endpoint>
-export OPENAI_MODEL_NAME=<your openai model name>
 ```
 
 
