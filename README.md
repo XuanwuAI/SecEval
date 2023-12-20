@@ -22,15 +22,14 @@ SecEval generates questions by prompting OpenAI GPT4 with authoritative sources 
 
 ## Leaderboard
 
-| #   | Model              | Creator    | Access | Submission Date | System Security | PenTest | Network Security | Application Security | Web Security | Vulnerability | Software Security | Memory Safety | Cryptography | Overall |
-|-----|--------------------|------------|--------|-----------------|-----------------|---------|------------------|----------------------|--------------|-----------------|------------------|--------------|--------------|---------|
-| 1   | gpt-35-turbo       | OpenAI     | API, Web | 2023-12-20      | 51.0            | 67.0    | 53.0             | 50.0                 | 58.0         | 52.0            | 49.0             | 35.0         | 39.0         | 0.51    |
-| 2   | Yi-6B              | 01-ai      | Weight | 2023-12-20      | 43.0            | 61.0    | 52.0             | 42.0                 | 49.0         | 42.0            | 38.0             | 31.0         | 33.0         | 0.45    |
-| 3   | chatglm3-6b-base   | THUDM      | Weight | 2023-12-20      | 35.0            | 50.0    | 39.0             | 33.0                 | 37.0         | 32.0            | 34.0             | 25.0         | 28.0         | 0.36    |
-| 4   | internlm-7b        | internlm   | Weight | 2023-12-20      | 22.0            | 32.0    | 26.0             | 22.0                 | 29.0         | 25.0            | 29.0             | 21.0         | 17.0         | 0.25    |
-| 5   | Atom-7B            | FlagAlpha  | Weight | 2023-12-20      | 16.0            | 22.0    | 14.0             | 15.0                 | 21.0         | 17.0            | 18.0             | 13.0         | 28.0         | 0.18    |
-| 6   | Llama-2-7b-hf      | MetaAI     | Weight | 2023-12-20      | 18.0            | 23.0    | 13.0             | 16.0                 | 19.0         | 18.0            | 18.0             | 17.0         | 22.0         | 0.18    |
-
+| #   | Model              | Creator       | Access   | Submission Date | System Security | PenTest | Network Security | Application Security | Web Security | Vulnerability | Software Security | Memory Safety | Cryptography | Overall |
+|-----|--------------------|---------------|----------|-----------------|-----------------|---------|------------------|----------------------|--------------|-----------------|--------------------|--------------|--------------|---------|
+| 1   | gpt-35-turbo       | OpenAI        | API, Web | 2023-12-20      | 50.55           | 67.09   | 52.57            | 49.53                | 58.13        | 51.86           | 48.60              | 35.21        | 38.89        | 51.34   |
+| 2   | Yi-6B              | 01-ai         | Weight   | 2023-12-20      | 43.46           | 60.94   | 52.21            | 41.96                | 48.70        | 42.15           | 38.48              | 30.99        | 33.33        | 45.00   |
+| 3   | chatglm3-6b-base   | THUDM         | Weight   | 2023-12-20      | 34.81           | 50.27   | 38.97            | 32.71                | 37.20        | 31.82           | 33.99              | 25.35        | 27.78        | 35.61   |
+| 4   | internlm-7b        | internlm      | Weight   | 2023-12-20      | 21.95           | 31.65   | 26.47            | 21.59                | 29.22        | 25.21           | 28.65              | 21.13        | 16.67        | 25.40   |
+| 5   | Llama-2-7b-hf      | MetaAI        | Weight   | 2023-12-20      | 17.96           | 22.97   | 12.87            | 16.26                | 19.38        | 17.98           | 17.70              | 16.90        | 22.22        | 18.46   |
+| 6   | Atom-7B            | FlagAlpha     | Weight   | 2023-12-20      | 16.04           | 22.24   | 14.34            | 14.58                | 20.62        | 16.94           | 18.26              | 12.68        | 27.78        | 17.64   |
 
 ## Dataset
 

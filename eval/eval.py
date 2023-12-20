@@ -189,10 +189,10 @@ def count_score_by_topic(dataset: List[Dict[str, Any]]):
         k: f"{v}/{total_score_by_topic[k]}" for k, v in score_by_topic.items()
     }
     score_float = {
-        k: round(100 * float(v) / float(total_score_by_topic[k]), 2)
+        k: round(100 * float(v) / float(total_score_by_topic[k]), 4)
         for k, v in score_by_topic.items()
     }
-    score_float["Overall"] = round(100 * float(score) / float(len(dataset)), 2)
+    score_float["Overall"] = round(100 * float(score) / float(len(dataset)), 4)
     score_fraction["Overall"] = f"{score}/{len(dataset)}"
     return score_fraction, score_float
 
