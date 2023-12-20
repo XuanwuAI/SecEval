@@ -5,15 +5,16 @@ let obj_to_tr = (obj) => {
         <td>${obj.Creator}</td>
         <td>${obj.Access}</td>
         <td>${obj["Submission Date"]}</td>
-        <td>${obj.Avg}</td>
         <td>${obj["Network Security"]}</td>
         <td>${obj.Vulnerability}</td>
-        <td>${obj["Memeory Security"]}</td>
+        <td>${obj["Memory Safety"]}</td>
         <td>${obj["Web Security"]}</td>
-        <td>${obj["App Securiry"]}</td>
+        <td>${obj["Application Security"]}</td>
         <td>${obj.Cryptography}</td>
         <td>${obj["System Security"]}</td>
-        <td>${obj.Pentest}</td>
+        <td>${obj["Software Security"]}</td>
+        <td>${obj["PenTest"]}</td>
+        <td>${obj.Overall}</td>
     </tr>`
 }
 

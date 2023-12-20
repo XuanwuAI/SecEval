@@ -21,11 +21,11 @@ let body = document.getElementById("content-body");
 let display = document.getElementById("display");
 let optboxes = document.getElementsByClassName("optbox");
 let opt_dds = document.getElementsByClassName("opt-dd");
-let filter_submit = document.getElementById("filter-submit");
 
 optboxes[0].innerHTML += topic_dd;
 
 topic_dd = document.getElementById("topic-dd");
+topic_dd.addEventListener("change", filter_data);
 
 
 let filters = {};
@@ -37,7 +37,6 @@ closebtn.addEventListener("click", closeNav);
 for (each of opt_dds) {
     each.addEventListener("change", change_filters);
 }
-filter_submit.addEventListener("click", filter_data);
 
 filter_data();
 
