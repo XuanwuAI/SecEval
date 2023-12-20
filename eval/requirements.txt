@@ -1,0 +1,9 @@
+transformers==4.36.*
+langchain
+einops
+protobuf
+scipy
+sentencepiece
+torch
+flash_attn==2.3.*
+python-dotenv
