@@ -79,7 +79,7 @@ The dataset is released under the [CC BY-NC-SA 4.0](https://creativecommons.org/
 
 ```bibtex
 @misc{li2023seceval,
-    title={C-Eval: SecEval: A Comprehensive Benchmark for Evaluating Cybersecurity Knownledge of Foundation Models},
+    title={SecEval: A Comprehensive Benchmark for Evaluating Cybersecurity Knownledge of Foundation Models},
     author={Li, Guancheng and Li, Yifeng and Wang Guannan and Yang, Haoyu and Yu, Yang},
     publisher = {GitHub},
     howpublished= "https//github.com/XuanwuAI/SecEval",
