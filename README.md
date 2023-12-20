@@ -43,7 +43,7 @@ Or you can load the dataset from [Huggingface](https://huggingface.co/datasets/X
 
 ## Evaluate
 
-You can use our [evaluation script](eval/README.md) your model on SecEval dataset.
+You can use our [evaluation script](https://github.com/XuanwuAI/SecEval/tree/main/eval) to evaluate your model on SecEval dataset.
 
 
 ## Paper
@@ -56,7 +56,7 @@ The dataset, while comprehensive, exhibits certain constraints:
 
 1. **Distribution Imbalance**: The dataset presents an uneven distribution of questions across different domains, resulting in a higher concentration of questions in certain areas while others are less represented.
 
-2. **Incomplete Scope**: Notably absent from the dataset are topics pertaining to cybersecurity, such as content security, reverse engineering, and malware analysis. As such, it does not encapsulate the full breadth of knowledge within the field.
+2. **Incomplete Scope**: Some topics on Cybersecurity are absent from the dataset, such as content security, reverse engineering, and malware analysis. As such, it does not encapsulate the full breadth of knowledge within the field.
 
 3. **Accuracy Concerns**: A minor fraction of the questions have been identified as incorrect during sample inspections. These inaccuracies stem from limitations inherent in the current generation methodology. **However, these inaccuracies are sufficiently infrequent to not influence the effectiveness of the dataset.**
 
@@ -64,7 +64,7 @@ The dataset, while comprehensive, exhibits certain constraints:
 
 1. **Improvement on Distribution**: We aim to broaden the dataset's comprehensiveness by incorporating additional questions, thereby enriching the coverage of existing cybersecurity topics.
 
-2. **Improvement on Topic Coverage**: Efforts will be made to include a wider array of cybersecurity topic within the dataset, which will help achieve a more equitable distribution of questions across various fields.
+2. **Improvement on Topic Coverage**: Efforts will be made to include a wider array of cybersecurity topics within the dataset, which will help achieve a more equitable distribution of questions across various fields.
 
 3. **Quality Assurance**: We plan to implement a robust verification pipeline to ensure the correctness of each question within the dataset. (Doing)
 
@@ -78,7 +78,7 @@ The dataset is released under the [CC BY-NC-SA 4.0](https://creativecommons.org/
 
 ```bibtex
 @misc{li2023seceval,
-    title={SecEval: A Comprehensive Benchmark for Evaluating Cybersecurity Knownledge of Foundation Models},
+    title={SecEval: A Comprehensive Benchmark for Evaluating Cybersecurity Knowledge of Foundation Models},
     author={Li, Guancheng and Li, Yifeng and Wang Guannan and Yang, Haoyu and Yu, Yang},
     publisher = {GitHub},
     howpublished= "https://github.com/XuanwuAI/SecEval",
