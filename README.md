@@ -5,7 +5,7 @@ The advent of large language models has ignited a transformative era for the cyb
 Yet, a focused evaluation of cybersecurity knowledge is missing in existing datasets. We address this by introducing "SecEval". SecEval is the first benchmark specifically created for evaluating cybersecurity knowledge in Foundation Models. It offers over 2000 multiple-choice questions across 9 domains: Software Security, Application Security, System Security, Web Security, Cryptography, Memory Safety, Network Security, and PenTest.
 SecEval generates questions by prompting OpenAI GPT4 with authoritative sources such as open-licensed textbooks, official documentation, and industry guidelines and standards. The generation process is meticulously crafted to ensure the dataset meets rigorous quality, diversity, and impartiality criteria. You can explore our dataset the [explore page](https://xuanwuai.github.io/SecEval/explore.html). 
 
-Using SecEval, we conduct an evaluation of over 10 state-of-the-art foundational models, providing new insights into their performance in the field of cybersecurity. The results indicate that there is still a long way to go before LLMs can be the master of  cybersecurity. We hope that SecEval can serve as a catalyst for future research in this area.
+Using SecEval, we conduct an evaluation of 10 state-of-the-art foundational models, providing new insights into their performance in the field of cybersecurity. The results indicate that there is still a long way to go before LLMs can be the master of  cybersecurity. We hope that SecEval can serve as a catalyst for future research in this area.
 
 
 
@@ -145,4 +145,4 @@ The dataset is released under the [CC BY-NC-SA 4.0](https://creativecommons.org/
 
 ## Credits
 
-This work is supported by [Tencent Security Xuanwu Lab](https://xlab.tencent.com/en/) and Tencent Spark Talent Program.
+This work is supported by [Tencent Security Xuanwu Lab](https://xlab.tencent.com/en/). we also apperiate Tencent Spark Talent Program for help.
