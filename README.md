@@ -12,9 +12,8 @@ Using SecEval, we conduct an evaluation of over 10 state-of-the-art foundational
 ## Table of Contents
 
 - [Leaderboard](#leaderboard)
-- [Data Collection](#data-collection)
 - [Dataset](#dataset)
-- [Evaluate](#evaluate)
+- [Generation Process](#generation-process)
 - [Limitations](#limitations)
 - [Future Work](#future-work)
 - [Licenses](#licenses)
