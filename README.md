@@ -1,5 +1,7 @@
 # SecEval: A Comprehensive Benchmark for Evaluating Cybersecurity Knowledge of Foundation Models
 
+[中文版](README_CN.md).
+
 The advent of large language models has ignited a transformative era for the cybersecurity industry. Pioneering applications are being developed, deployed, and utilized in areas such as cybersecurity knowledge QA, vulnerability hunting, and alert investigation. Various researches have indicated that LLMs primarily acquire their knowledge during the pretraining phase, with fine-tuning serving essentially to align the model with user intentions, providing the ability to follow instructions. This suggests that the knowledge and skills embedded in the foundational model significantly influence the model's potential on specific downstream tas ks
 
 Yet, a focused evaluation of cybersecurity knowledge is missing in existing datasets. We address this by introducing "SecEval". SecEval is the first benchmark specifically created for evaluating cybersecurity knowledge in Foundation Models. It offers over 2000 multiple-choice questions across 9 domains: Software Security, Application Security, System Security, Web Security, Cryptography, Memory Safety, Network Security, and PenTest.
