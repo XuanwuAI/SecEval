@@ -2,7 +2,6 @@ import argparse
 from typing import Any, Dict, List
 from dotenv import load_dotenv
 import asyncio
-
 load_dotenv()
 from langchain.llms.huggingface_pipeline import HuggingFacePipeline
 from langchain.chat_models import AzureChatOpenAI
@@ -22,6 +21,14 @@ import logging
 
 logger = logging.getLogger(__name__)
 import time
+from langchain.globals import set_llm_cache
+from langchain.cache import SQLiteCache
+
+set_llm_cache(
+    SQLiteCache(
+        database_path=str(Path(__file__).parent.parent / ".langchain.db")
+    )
+)
 
 logging.basicConfig(
     level=logging.INFO,
@@ -31,10 +38,10 @@ logger.addHandler(logging.FileHandler(f"./eval-{int(time.time())}.log", "w"))
 instruction = "Below are multiple-choice questions concerning cybersecurity. Please select the correct answers and respond with the letters ABCD only."
 chat_few_shot = [
     HumanMessage(
-        content="Question: What's the capital of China? A: Beijing B: Shanghai C: Guangzhou D: Shenzhen",
+        content="Question: Which mitigation prevent stack overflow bug? A: Stack Canary. B: ALSR. C: CFI. D: Code Signing.",
     ),
     AIMessage(
-        content="Answer: A",
+        content="Answer: ABC",
     ),
 ]
 few_shot = """
@@ -183,8 +190,8 @@ def count_score_by_topic(dataset: List[Dict[str, Any]]):
                 score_by_topic[topic] = 0
                 total_score_by_topic[topic] = 0
             score_by_topic[topic] += dataset_row["score"]
-            score += dataset_row["score"]
             total_score_by_topic[topic] += 1
+        score += dataset_row["score"]
     score_fraction = {
         k: f"{v}/{total_score_by_topic[k]}" for k, v in score_by_topic.items()
     }
