@@ -1,6 +1,6 @@
 leaderboard = [
     {
-        "Model": "GPT-4-turbo",
+        "Model": "gpt-4-turbo",
         "Creator": "OpenAI",
         "Access": "API, Web",
         "Submission Date": "2023-12-20",

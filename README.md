@@ -28,7 +28,7 @@ Using SecEval, we conduct an evaluation of 10 state-of-the-art foundational mode
 
 | #   | Model             | Creator   | Access    | Submission Date | System Security | Application Security | PenTest | Memory Safety | Network Security | Web Security | Vulnerability | Software Security | Cryptography | Overall |
 |-----|-------------------|-----------|-----------|-----------------|-----------------|----------------------|---------|---------------|------------------|--------------|---------------|-------------------|--------------|---------|
-| 1   | GPT-4-turbo       | OpenAI    | API, Web  | 2023-12-20      | 73.61           | 75.25                | 80.00   | 70.83         | 75.65            | 82.15        | 76.05         | 73.28             | 64.29        | 79.07   |
+| 1   | gpt-4-turbo       | OpenAI    | API, Web  | 2023-12-20      | 73.61           | 75.25                | 80.00   | 70.83         | 75.65            | 82.15        | 76.05         | 73.28             | 64.29        | 79.07   |
 | 2   | gpt-3.5-turbo     | OpenAI    | API, Web  | 2023-12-20      | 59.15           | 57.18                | 72.00   | 43.75         | 60.87            | 63.00        | 60.18         | 58.19             | 35.71        | 62.09   |
 | 3   | Yi-6B             | 01-AI     | Weight    | 2023-12-20      | 50.61           | 48.89                | 69.26   | 35.42         | 56.52            | 54.98        | 49.40         | 45.69             | 35.71        | 53.57   |
 | 4   | Orca-2-7b         | Microsoft | Weight    | 2023-12-20      | 46.76           | 47.03                | 60.84   | 31.25         | 49.13            | 55.63        | 50.00         | 52.16             | 14.29        | 51.60   |

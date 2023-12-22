@@ -219,7 +219,13 @@ li {
     }
 
     table {
-        display: none;
+        width: 100%; 
+        overflow-x: auto; 
+        display: block; 
+    }
+
+    th, td {
+        white-space: nowrap; 
     }
 }
 
