@@ -109,7 +109,7 @@ wget https://huggingface.co/datasets/XuanwuAI/SecEval/blob/main/problems.json
 
 ## 局限性
 
-当前数据集存在一定的徐建新：
+当前数据集存在一定的局限性：
 
 1. **分布不平衡**：数据集在不同领域的问题分布不均，导致某些区域的问题集中度较高，而其他区域则较少。
 
